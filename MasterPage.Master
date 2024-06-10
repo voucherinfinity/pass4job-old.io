@@ -1,0 +1,322 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Pass4Job.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>IT exam trainings and certification, provide best discounted exam vouchers</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="shortcut icon" href="https://pass4job.com/images/favicon-32x32.png" type="image/x-icon" />
+     <meta name="google-site-verification" content="yR3qUjDBn_x6VQtuFIN8B99vEa2kvtfG_f4X9S4YGFo" />
+     <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NF4ZPRF7');</script>
+<!-- End Google Tag Manager -->
+    <meta name="description" content="Best certification and training courses for world leading vendors, provides vouchers to save money on exam test.">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://pass4job.com/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://pass4job.com/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="https://pass4job.com/assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="https://pass4job.com/assets/css/owl.css">
+
+    <style>
+        @media (max-width: 900px) {
+    .logo-img {
+        margin-top: 22px;
+          }
+       }
+       .menu-trigger {
+        margin-top: 12px;
+          }
+       }
+        .social-footer {
+            padding: 5%;
+            background: black;
+        }
+
+        .footer-widget .footer-title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            color: #fff;
+            padding-bottom: 18px;
+        }
+
+        .inside:after {
+            color: grey;
+            font-family: FontAwesome;
+            content: "\f107";
+            font-size: 12px;
+            cursor: pointer;
+            position: absolute;
+            right: 5px;
+        }
+
+        .header-area .main-nav .nav li.has-sub ul.menuinside {
+            position: absolute;
+            width: 100%;
+            box-shadow: 0 2px 28px 0 rgb(0 0 0 / 6%);
+            overflow: hidden;
+            top: 40px;
+            left: 100%;
+            opacity: 0;
+            transition: all .3s;
+            transform: translateY(2em);
+            visibility: hidden;
+            z-index: -1;
+        }
+
+        .header-area .main-nav .nav li.has-sub ul li.inside-list {
+            position: relative;
+            padding-right: 15px;
+        }
+    </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SRQS5DS5Q8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SRQS5DS5Q8');
+</script>
+ <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1302184930541426');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1302184930541426&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <div class="sub-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-sm-8">
+                            <div class="left-icons" style="margin-top: 6px;">
+                                <ul>
+                                    <li><a href="mailto:info@pass4job.com" style="color: white; font-size: small;"><i class="fa fa-envelope"></i> info@pass4job.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4">
+                            <div class="right-icons">
+                                <ul>
+                                     <li><a href="login"  runat="server" id="login"><i class="fa fa-user"></i> Login</a>
+                                           <a href="panel"  runat="server" id="logout" style="display: none;">
+                                                <i class="fa fa-user"></i>&nbsp;<asp:Label ID="lblUsername" runat="server"></asp:Label>
+                                                <!--<i class="fa fa-angle-down m-l-5"></i>-->
+                                            </a>
+                                     </li>
+                                    <li></li>
+                                    <li><a href="https://www.facebook.com/Pass4Job" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/pass4job/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/pass4job-com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ***** Header Area Start ***** -->
+            <header class="header-area header-sticky">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <nav class="main-nav">
+                                <!-- ***** Logo Start ***** -->
+                                <a href="/" class="logo">
+                                    <img class="logo-img" src="https://pass4job.com/assets/images/logo.png" />
+                                </a>
+                                <!-- ***** Logo End ***** -->
+
+                                <!-- ***** Menu Start ***** -->
+                                <ul class="nav">
+                                    <li><a href="/" class="active">Home</a></li>
+                                    <li><a href="https://pass4job.com/about">ABOUT US</a></li>
+                                    <li><a href="https://pass4job.com/all-vendors">Training</a>
+                                     
+                                    </li>
+                                    <li>
+
+                                        <a href="https://pass4job.com/corporate-training">Corp. Training</a>
+                                       
+                                    </li>
+                                    <li><a href="https://pass4job.com/pte-exam">PTE Exam Voucher</a>
+                                       
+                                    <li><a href="https://pass4job.com/contact">Contact Us</a></li>
+                                </ul>
+                                <a class='menu-trigger'>
+                                    <span>Menu</span>
+                                </a>
+                                <!-- ***** Menu End ***** -->
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <section class="social-footer" style="background-color: currentColor;">
+                <div class="footer-widget">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="footer-link mt-45" style="margin-top: 83px;">
+                                    <h4 class="footer-title">ABOUT US</h4>
+                                    <ul class="link-list">
+                                        <li>
+                                            <p style="color: white;">PASS4JOB promise you to provide the best certification and training courses ever. We have to set a benchmark in the tech industry that provides result-oriented IT certification courses to students all around the world.</p>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6">
+                                <div class="footer-link mt-45" style="margin-top: 83px;">
+                                    <h4 class="footer-title">Information</h4>
+                                    <ul class="link-list">
+                                        <li><a href="https://pass4job.com/about" style="color: white;">About Us</a></li>
+                                        <li><a href="https://pass4job.com/all-vendors" style="color: white;">Our Partners</a></li>
+                                        <li><a href="https://pass4job.com/home#testimonials" style="color: white;">Our Clients</a></li>
+                                        <li><a href="https://pass4job.com/all-vendors" style="color: white;">Vendors</a></li>
+
+                                        <%--<li><a href="https://pass4job.com/blog" style="color:white;">Blog</a></li>
+                                        <li><a href="https://pass4job.com/news" style="color:white;">News</a></li>
+                                        <li><a href="https://pass4job.com/promotions" style="color:white;">Promotions</a></li>--%>
+                                        <li><a href="https://pass4job.com/contact" style="color: white;">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="footer-link mt-45" style="margin-top: 83px;">
+                                    <h4 class="footer-title">Useful Links</h4>
+                                    <ul class="link-list">
+                                        <li><a href="https://pass4job.com/pte-exam" style="color: white;">PTE Exam Voucher</a>
+                                        <li><a href="https://pass4job.com/terms" style="color: white;">Terms and Conditions</a></li>
+                                        <li><a href="https://pass4job.com/privacy-policy" style="color: white;">Privacy Policy</a></li>
+                                        <li><a href="https://pass4job.com/refund-policy" style="color: white;">Refund Policy</a></li>
+                                        <%-- <li><a href="#" style="color:white;">Sitemap</a></li>--%>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="footer-link mt-45" style="margin-top: 83px;">
+                                    <h4 class="footer-title">Contact Info</h4>
+                                    <ul class="link-list">
+                                        <li>
+                                            <p style="color: white;"><b>Address:-</b> A-48, Phase-2, Mangol Puri Industrial Area, Pitampura New Delhi - 110034 </p>
+                                            <br />
+                                        </li>
+                                        <li>
+                                            <p style="color: white;"><b>Email Address:-</b> info@pass4job.com</p>
+                                        </li>
+                                        <li>
+                                            <p style="color: white;"><b>Phone Number(Ind): </b>+91-7428563177 </p>
+                                            <p style="color: white;"><b>Phone Number(Intl): </b>+1 804 441 8645</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <p>
+                            Copyright © 2023 Trainotrack solutions Pvt Ltd. All Rights Reserved. 
+         
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Scripts -->
+
+
+            <!-- Bootstrap core JavaScript -->
+
+            <!-- Scripts -->
+            <!-- Bootstrap core JavaScript -->
+            <script src="https://pass4job.com/vendor/jquery/jquery.min.js"></script>
+           
+            <script src="https://pass4job.com/assets/js/isotope.min.js"></script>
+            <script src="https://pass4job.com/assets/js/owl-carousel.js"></script>
+            <script src="https://pass4job.com/assets/js/lightbox.js"></script>
+            <script src="https://pass4job.com/assets/js/tabs.js"></script>
+            <script src="https://pass4job.com/assets/js/slick-slider.js"></script>
+            <script src="https://pass4job.com/assets/js/custom.js"></script>
+            <%--<script>
+                //according to loftblog tut
+                $('.nav li:first').addClass('active');
+
+                var showSection = function showSection(section, isAnimate) {
+                    var
+                        direction = section.replace(/#/, ''),
+                        reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+                        reqSectionPos = reqSection.offset().top - 0;
+
+                    if (isAnimate) {
+                        $('body, html').animate({
+                            scrollTop: reqSectionPos
+                        },
+                            800);
+                    } else {
+                        $('body, html').scrollTop(reqSectionPos);
+                    }
+
+                };
+
+                var checkSection = function checkSection() {
+                    $('.section').each(function () {
+                        var
+                            $this = $(this),
+                            topEdge = $this.offset().top - 80,
+                            bottomEdge = topEdge + $this.height(),
+                            wScroll = $(window).scrollTop();
+                        if (topEdge < wScroll && bottomEdge > wScroll) {
+                            var
+                                currentId = $this.data('section'),
+                                reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+                            reqLink.closest('li').addClass('active').
+                                siblings().removeClass('active');
+                        }
+                    });
+                };
+
+                $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+                    e.preventDefault();
+                    showSection($(this).attr('href'), true);
+                });
+
+                $(window).scroll(function () {
+                    checkSection();
+                });
+            </script>--%>
+        </div>
+    </form>
+</body>
+</html>
